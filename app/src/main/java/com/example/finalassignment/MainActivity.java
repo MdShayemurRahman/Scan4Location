@@ -62,7 +62,8 @@ public class MainActivity extends AppCompatActivity {
 
             scanButton.setOnClickListener(view -> {
                 if(!isScanning) {
-                    scannedTextView.setText("Searching QR code..");
+                    scannedTextView.setText("Searching QR/ code..");
+                    distanceTextView.setText("");
                     initializeCodeScanner();
                 }
                 isScanning = false;
