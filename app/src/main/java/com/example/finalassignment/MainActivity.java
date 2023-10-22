@@ -159,7 +159,7 @@ public class MainActivity extends AppCompatActivity {
         double distance = calculateDistance(this.latitude, this.longitude, latitude, longitude);
         DecimalFormat df = new DecimalFormat("#.##");
         String formattedDistance = df.format(distance);
-        distanceTextView.setText("Location: " + formattedDistance + " km");
+        distanceTextView.setText("Distance: " + formattedDistance + " km away");
     }
     private void initializeCodeScanner() {
         mCodeScanner.startPreview();
